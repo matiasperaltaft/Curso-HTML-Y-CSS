@@ -1,16 +1,6 @@
 /* Hoja de estilos */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/*
-
-    selector {
-        propiedad: valor;
-        propiedad: valor;
-        propiedad: valor;
-    }
-
-*/
-
 .colores {
     color: hsl(208, 100%, 8%);
     color: hsl(208, 100%, 15%);
@@ -19,17 +9,21 @@
     color: hsl(286, 100%, 65%);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Estilos generales */
 body {
     background-color: hsl(208, 100%, 94%);
     color: hsl(208, 100%, 8%);
-    font-family: "Inter", sans-serif;
     line-height: 1.6;
     margin: 0;
 }
 
 section h1 {
-    font-size: 3rem; /* 1rem = 16px, asigna el tamaño del cuerpo de la tipografia */
+    font-size: 3rem; /* 1rem = 16px, asigna el tamaño del cuerpo de la tipografía */
     text-align: center; /* left */
     font-weight: 300;
     /* font-style: italic; */
@@ -42,12 +36,12 @@ header {
     padding: 1rem 2rem;
 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 
 header ul {
-    list-style: none; /* Elimina el punto de una ul */
+    list-style: none;
     padding: 0;
 
     display: flex;
@@ -81,20 +75,22 @@ footer ul {
     padding: 0;
 
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
 footer h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-/* Clase 3 */
 
+
+/* Clase 3 */
 .modelo-de-caja {
     /* background-color: red; */
 
-    width: min(24rem, 100%); /* Ancho */
-    height: 24rem; /* Altura */
+    width: min(24rem, 100%);
+    height: 24rem;
 
     padding: 2rem;
 
@@ -113,10 +109,10 @@ img {
 
 /* Clase 4 */
 /* Estilos para los links */
-/* Estilos de los links para el Nav */
+/* Estilo de los links para el Nav */
 a.nav:link,
 a.nav:visited {
-    color: hsl(286, 100%, 94%);
+    color: hsl(208, 100%, 94%);
     text-decoration: none;
 }
 
@@ -141,12 +137,12 @@ a.logo:active {
 a.footer:link,
 a.footer:visited {
     color: hsl(286, 100%, 65%);
+    text-decoration: none;
 }
 
 a.footer:hover,
 a.footer:active {
     color: hsl(286, 100%, 85%);
-    text-decoration: none;
 }
 
 /* Flexbox */
@@ -157,11 +153,11 @@ a.footer:active {
     background-color: hsl(208, 100%, 74%);
 
     display: flex;
-    flex-direction: row; /* Controla la direccion del eje principal */
-    justify-content: center; /* Controla el eje principal */
+    flex-direction: row; /* Controla la dirección del eje principal */
+    justify-content: space-between; /* Controla el eje principal */
     align-items: center; /* Controla el eje secundario */
 
-    gap: 1rem; /* Controla el espacio entre elementos */
+    gap: 1rem;
 }
 
 .item {
@@ -175,10 +171,11 @@ a.footer:active {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .item:hover {
-    background-color: green;
+    background-color: hsl(286, 100%, 65%);
 }
 
 /* Bienvenida! */
@@ -195,11 +192,12 @@ a.footer:active {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+
 }
 
 #bienvenida h1 {
-    color: hsl(286, 100%, 94%);
-    background-color: hsla(208, 100%, 8%, 0.669);
+    color: hsl(208, 100%, 94%);
+    background-color: hsla(208, 100%, 8%, 0.75);
     padding: 1rem 0;
 }
 
@@ -209,6 +207,7 @@ a.footer:active {
     justify-content: center;
     gap: 1rem;
 }
+
 article {
     text-align: center;
     width: 12rem;
@@ -226,7 +225,7 @@ article h3 {
 }
 
 article h2 {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 article h3 {
@@ -257,14 +256,13 @@ a.btn-outline:active {
 
 a.btn-fill:link,
 a.btn-fill:visited {
-    color: hsl(208, 100%, 8%);
     border: 0.1rem solid hsl(208, 100%, 8%);
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
     text-decoration: none;
     border-radius: 0.5rem;
 
-    color: hsl(286, 100%, 94%);
+    color: hsl(208, 100%, 94%);
     background-color: hsl(208, 100%, 8%);
 }
 
@@ -275,9 +273,8 @@ a.btn-fill:active {
 }
 
 /* Social */
-
 .contacto img {
-    width: 2rem;
+    width: 2.5rem;
 }
 
 /* Clase 6 */
