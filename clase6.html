@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Clase 6</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1><a class="logo" href="index.html">DW</a></h1>
+
+        <nav>
+            <ul>
+                <li><a class="nav" href="clase1.html">Clase 1</a></li>
+                <li><a class="nav" href="Clase2.html">Clase 2</a></li>
+                <li><a class="nav" href="Clase3.html">Clase 3</a></li>
+                <li><a class="nav" href="Clase4.html">Clase 4</a></li>
+                <li><a class="nav" href="Clase5.html">Clase 5</a></li>
+                <li><a class="nav" href="Clase6.html">Clase 6</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bienvenida">
+            <h1>Bienvenidos a la clase 6</h1>
+        </section>
+
+        <section>
+            <h1>Github</h1>
+            <img src="img/github.png" alt="Repositorio del curso en Github">
+            <ul>
+                <li><a href="https://github.com/matiasperaltaft/Curso-HTML-Y-CSS" target="_blank">Repo del curso</a></li>
+                <li><a href="https://github.com/matiasperaltaft/Curso-HTML-Y-CSS" target="_blank">Ver página online</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Formularios</h1>
+            <form action="">
+                <h2>Nuevo usuario</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="¿Cuál es tu nombre?">
+                <span>Mensaje de estado</span>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="¿Cuál es tu apellido?">
+                <span>Mensaje de estado</span>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@dominio.com">
+                <span>Mensaje de estado</span>
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Elige tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+            <label> ¿Te gustaría recibir novedades por email?
+                <input type="radio" name="newsletter" value="newsletter-si"> Si
+                <input type="radio" name="newsletter"
+                value="newsletter-no"> No
+            </label>
+
+                <button>Enviar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <h1>Sobre nuestro curso:</h1>
+        <nav>
+            <ul>
+                <li><a href="" class="footer">Programa
+                <a></li>
+                <li><a href="" class="footer">Alumni</a></li>
+                <li><a href="" class="footer">Discord</a></li>
+
+                <li>
+                    <a href="https://wa.me/5491152638148" class="contacto" target="_blank">
+                        <img src="img/whatsapp-brands-solid-full.svg" alt="Contactanos a través de Whatsapp!">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
