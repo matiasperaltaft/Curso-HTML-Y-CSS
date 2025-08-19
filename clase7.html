@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Clase 4</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Clase 6</title>
+    <title>Clase 7</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,34 +30,50 @@
 
     <main>
         <section id="bienvenida">
-            <h1>Bienvenidos a la clase 4</h1>
-        </section>
-        
-        <section>
-            <h1>Vínculos</h1>
-            <p>Para editar el aspecto visual de nuestros vinculos debemos tener en cuenta que los mismos están compuestos por 4 estados:</p>
-            <ul>
-                <li>Reposo (a:link)</li>
-                <li>Visitado (a:visited)</li>
-                <li>'Hover'(a:hover)</li>
-                <li>Activado (a:active)</li>
-            </ul>
-            <p>Debemos respetar el orden de las pseudo-clases cuando escribamos nuestro CSS. No puede faltar ninguna.</p>
+            <h1>Bienvenidos a la clase 7</h1>
         </section>
         <section>
-            <h1>Flexbox</h1>
-            <p>Flexbox es un método de CSS para ordenar elementos en filas o columnas. Además sirve para que los elementos sean "flexibles" dentro de un contenedor.
-            </p>
+            <h1>Formularios: 2da. parte</h1>
+            <form action="">
+                <h2>Log in</h2>
+                <label for="email">Email</label>
+                <input type="email" placeholder="¿Cuál es tu email?" required>
+                <span>Mensaje de estado</span>
 
-            <div class="contenedor-flex">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-            </div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+                <button>Ingresar</button>
+            </form>
+            <br>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="¿Como te llamás?" required>
+                <span>Mensaje de estado</span>
+
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="miPedido" selected>Mi pedido</option>
+                    <option value="miSuscripción">Mi Suscripción</option>
+                    <option value="MisNovedades">Mis novedades</option>
+                    <option value="otraConsulta">Otra consulta</option>
+                </select>
+                <span>Mensaje de estado</span>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <span>Mensaje de estado</span>
+
+                <label>
+                    Acepto los términos y condiciones
+                    <input type="checkbox" value="acepta" required>
+                </label>
+
+                <button>Enviar mensaje</button>
+            </form>
         </section>
     </main>
-
     <footer>
         <h1>Sobre nuestro curso:</h1>
         <nav>
