@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Clase 4</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Clase 6</title>
+    <title>Clase 8</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,31 +31,35 @@
 
     <main>
         <section id="bienvenida">
-            <h1>Bienvenidos a la clase 4</h1>
+            <h1>Bienvenidos a la clase 8</h1>
         </section>
-        
-        <section>
-            <h1>Vínculos</h1>
-            <p>Para editar el aspecto visual de nuestros vinculos debemos tener en cuenta que los mismos están compuestos por 4 estados:</p>
-            <ul>
-                <li>Reposo (a:link)</li>
-                <li>Visitado (a:visited)</li>
-                <li>'Hover'(a:hover)</li>
-                <li>Activado (a:active)</li>
-            </ul>
-            <p>Debemos respetar el orden de las pseudo-clases cuando escribamos nuestro CSS. No puede faltar ninguna.</p>
-        </section>
-        <section>
-            <h1>Flexbox</h1>
-            <p>Flexbox es un método de CSS para ordenar elementos en filas o columnas. Además sirve para que los elementos sean "flexibles" dentro de un contenedor.
-            </p>
 
-            <div class="contenedor-flex">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-            </div>
+        <section>
+            <h1>Imágenes e iconos</h1>
+            <h2>Material Symbols</h2>
+            <ul>
+                <li><a href="https://fonts.google.com/icons">Material Symbols en Google Fonts</a></li>
+                <li><a href="https://developers.google.com/fonts/docs/material_symbols?hl=es-419">Documentación sobre Material Symbols</a></li>
+            </ul>
+            
+            <a href="index.html" class="btn-icon btn-icon-home" aria-label="Ir a la home" title="Ir a la home"><span class="sr-only">Ir a la home</span>
+            </a>
+
+            <a href="" class="btn-icon btn-icon-notif" aria-label="Ver mis notificaciones" title="Ver mis notificaciones"><span class="sr-only">Ver más notificaciones</span>
+            </a>
+
+            <a href="" class="btn-icon btn-icon-fav" aria-label="Ver mis favoritos" title="Ver mis favoritos"><span class="sr-only">Ver mis favoritos</span>
+            </a>
+        </section>
+        <section>
+            <h1>Buscador</h1>
+            <form action="" class="buscador">
+                <label for="buscar" class="sr-only">Buscar</label>
+                <input type="text" name="buscar" id="buscar" placeholder="¿Qué vamos a leer hoy?">
+                <button aria-label="Buscar dentro del catálogo">
+                    <span class="sr-only">Buscar dentro del catálogo</span>
+                </button>
+            </form>
         </section>
     </main>
 
